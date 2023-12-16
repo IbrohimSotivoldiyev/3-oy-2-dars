@@ -1,3 +1,139 @@
+/* @font-face {
+    font-family: 'Hind Madurai';
+    src: url('HindMadurai-Medium.woff2') format('woff2'),
+        url('HindMadurai-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    src: url('HindMadurai-Bold.woff2') format('woff2'),
+        url('HindMadurai-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    src: url('HindMadurai-Light.woff2') format('woff2'),
+        url('HindMadurai-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka SemiCondensed';
+    src: url('FredokaSemiCondensed-Regular.woff2') format('woff2'),
+        url('FredokaSemiCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka SemiExpanded';
+    src: url('FredokaSemiExpanded-Regular.woff2') format('woff2'),
+        url('FredokaSemiExpanded-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('Fredoka-Regular.woff2') format('woff2'),
+        url('Fredoka-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka Expanded';
+    src: url('FredokaExpanded-Regular.woff2') format('woff2'),
+        url('FredokaExpanded-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Italic.woff2') format('woff2'),
+        url('Roboto-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    src: url('HindMadurai-Regular.woff2') format('woff2'),
+        url('HindMadurai-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Light.woff2') format('woff2'),
+        url('Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Black.woff2') format('woff2'),
+        url('Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Bold.woff2') format('woff2'),
+        url('Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.woff2') format('woff2'),
+        url('Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    src: url('HindMadurai-SemiBold.woff2') format('woff2'),
+        url('HindMadurai-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Medium.woff2') format('woff2'),
+        url('Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+} */
+
+
 *{
     margin: 0;
     padding: 0;
@@ -23,7 +159,7 @@
      
 }
 body{
-   /* background-color:rgba(242, 206, 218, 0.3) ;  */
+  font-family:Roboto, sans-serif;
 
 
 }
@@ -59,15 +195,7 @@ body{
    margin-right: 177px;
   
 }
-.header-navlink-red{
-  
-    color: #D23166;
-    font-family: Roboto;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
+
 .header-navlink{
     margin-left: 40px;
 
@@ -77,6 +205,15 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+     &:hover{
+        color: #D23166;
+        font-family: Roboto;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+     }
 }
 .button{
    padding: 14px 25px 13px 50px;
@@ -232,13 +369,26 @@ letter-spacing: 1.4px;
     width: 250px;
     height: 200px;
     flex-shrink: 0;
+
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    
+    background: #FFF;
+    width: 250px;
+    height: 200px;
+    flex-shrink: 0;
     border-radius: 7px;
     background: #FFF;
-    
-    box-shadow: 20px 20px 50px 0px rgba(0, 0, 0, 0.10);
     justify-content: space-between;
    margin-left: 39px;
    margin-top: 100px;
+
+    &:hover{
+        border-radius: 7px;
+        background: #FFF;
+        box-shadow: 20px 20px 50px 0px rgba(0, 0, 0, 0.10);
+    }
+
 }
 .service-title{
    
@@ -271,19 +421,19 @@ letter-spacing: 1.4px;
 /* Section Brown */
 .brown{
 
-    width: 1600px;
+  
     height: 544.495px;
     flex-shrink: 0;
     background: #F8EDF0;
 
 }
 .brown__content{
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .brown__content-left{
+
     width: 442px;
     height: 256.705px;
     flex-shrink: 0;
@@ -332,10 +482,540 @@ letter-spacing: 1.4px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    &:hover{
+        border-radius: 5px;
+        border: 2px solid #D23166;
+        background: #FAFAFA;
+        flex-shrink: 0;
+        color: #D23166;
+        font-family: Hind Madurai;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
 }
-.brown__content-right{
-    width: 655px;
-    height: 656.804px;
-    flex-shrink: 0;
+/* .brown__content-right{
+
    
+  
+   
+ 
+  
+   
+} */
+.brown__image{
+    width: 585px;
+    height: 586.804px;
+    flex-shrink: 0;
+    flex-shrink: 0;
+   overflow: hidden;
+ 
 }
+/* Products sections */
+.products__content{
+    
+    height: 2346px;
+    flex-shrink: 0;
+    background: #FFF;
+}
+.products__title{
+    margin-bottom: 64px;
+    margin-top: 132px;
+    text-align: center;
+    color: #150101;
+    font-family: Hind Madurai;
+    font-size: 44.2px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.products__list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.products__link{
+    margin-left: 40px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+     &:hover{
+        color: #000;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        
+     }
+}
+.products__content-flexer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.products__content-image{
+    margin-right: 85px;
+    width: 580px;
+    height: 415px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+.products__content-title{
+    color: #000;
+    font-family: Hind Madurai;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 11px;
+}
+.products__content-text{
+    width: 454px;
+    height: 67px;
+    flex-shrink: 0;
+    color: #000;
+    
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    opacity: 0.7;
+    margin-bottom: 28px;
+}
+.products__content-price{
+    margin: 6px;
+    width: 71px;
+    height: 27px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Hind Madurai;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+}
+del{
+    text-decoration-line: line-through;
+    width: 58px;
+height: 27px;
+flex-shrink: 0;
+color: #000;
+
+font-family: Hind Madurai;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+opacity: 0.7;
+}
+.products__content-link{
+    padding: 15px 50px;
+    margin-top: 16px;
+    width: 165px;
+    height: 49px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #D64374;
+    color: #FAFAFA;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    &:hover{
+        color: #D23166;
+        font-family: Hind Madurai;
+        font-size: 16px;
+        font-style: normal;
+       
+        line-height: normal;
+        width: 165px;
+        height: 49px;
+        flex-shrink: 0;
+   
+        border-radius: 5px;
+        border: 2px solid #D23166;
+        
+        background: #FAFAFA;
+        
+        color:rgba(210, 49, 102, 1)
+        
+        
+    }
+}
+.products__content-flexer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.products__content-flexer3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 117px;
+}
+
+.products__content-flexer5{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+     
+}
+
+.products__content-clientflex{
+     display: flex;
+     margin-bottom: 46px;
+}
+.products__content-clientreview{
+    width: 322px;
+    height: 53px;
+    flex-shrink: 0;
+    color: #000;
+    
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    opacity: 0.7;
+}
+.products__content-clientflex2{
+     display: flex;
+     align-items: center;
+     margin-top: 56px;
+
+}
+.client__name{
+     margin-left: 12px;
+}
+.client__image2{
+     margin-right: 26px;
+     margin-left: 26px;
+}
+/* SEction Order */
+.order__section{
+    height: 640px;
+    flex-shrink: 0;
+    background: #F8EDF0;
+}
+.order__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.order__content-cart{
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+.order__content-title{
+    width: 621px;
+    color: #000;
+    
+    font-family: Roboto;
+    font-size: 44.2px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.order__content-image{
+     margin-top: 36px;
+}
+.order__content-text{
+    width: 607px;
+    height: 60px;
+    flex-shrink: 0;
+    color: #0F0101;
+    
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    opacity: 0.7;
+}
+/* . lect{
+    width: 166px;
+    color: #000;
+    
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;} */
+    .order__app{
+        display: flex;
+        align-items: center;
+    }
+
+    /* Contact section */
+    .contact__section{
+
+        height: 470px;
+        flex-shrink: 0;
+        background: #FFF;
+
+    }
+      .contact{
+      margin: 100px 215px;
+    
+      }
+      .titlemargin{
+        margin: 0px 29px;
+      }
+        .contact__title{
+            width: 522px;
+            height: 123px;
+            flex-shrink: 0;
+        
+            color: #000;
+            
+            text-align: center;
+            font-family: Roboto;
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        .contact__tel{
+            margin-right: 30px;
+            width: 303px;
+            height: 74px;
+            flex-shrink: 0;
+            border-radius: 5px;
+            border: 1px solid #FFA3A3;
+            
+            background: #FFF;
+           
+            color:rgba(15, 0, 0, 0.6);
+
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+         
+        }
+        .contact__qtype{
+            width: 303px;
+            height: 74px;
+            flex-shrink: 0;
+            border-radius: 5px;
+            border: 1px solid #FFA3A3;
+            
+            background: #FFF;
+            color:rgba(15, 0, 0, 0.6);
+
+
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        
+        }
+        .contact__question{
+            margin-top: 37px;
+            margin-bottom: 110px;
+            width: 637px;
+            height: 74px;
+            flex-shrink: 0;
+            border-radius: 5px;
+            border: 1px solid #FFA3A3;
+            
+            background: #FFF;
+            color:rgba(15, 0, 0, 0.6);
+
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        
+        }
+        .contact__button{
+            width: 134px;
+            height: 74px;
+            flex-shrink: 0;
+            border-radius: 5px;
+            background: #D64374;
+            color: #FFF;
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            &:hover{
+                flex-shrink: 0;
+                color: #D23166;
+                font-family: Hind Madurai;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                border-radius: 5px;
+                border: 2px solid #D23166;
+                
+                background: #FAFAFA;
+             }
+        }
+ /* Footer */
+ .footer__flexer{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .footer__first-logo{
+    margin-top: 70px;
+ }
+ .footer__first-text{
+    margin-top: 9px;
+    margin-bottom: 25px;
+    width: 207px;
+    height: 47px;
+    flex-shrink: 0;
+    color:rgba(255, 255, 255, 0.7);
+    
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139.687%; /* 16.762px */
+    letter-spacing: 0.12px;
+    
+    
+ }
+ .footer__media-icons{
+    margin-right: 10px;
+    cursor: pointer;
+ }
+ .footer__small-text{
+    margin-bottom: 8px;
+    color: white;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+ }
+ .footer__linker{
+    margin-bottom: 10px;
+ }
+ .footer__sec{
+    height: 381px;
+    flex-shrink: 0;
+    background: #0A0808;
+ }
+ .footer__media{
+    display: flex;
+    align-items: center;
+ }
+ .footer__second{
+    margin-top: 143px;
+ }
+ .footer__third{
+    margin-top: 150px;
+     
+ }
+ .footer__third-list{
+     gap: 10px;
+ }
+ .footer-link{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   color:  rgba(255, 255, 255, 0.8);
+
+    &:hover{
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+ }
+ .footer__four{
+    margin-top: 136px;
+ }
+ .footer__four-st{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+ }
+ .footer__form{
+    margin-top: 13px;
+    margin-bottom: 18px;
+  
+ }
+ 
+ .footer__input-flex{
+    display: flex;
+    align-items: center;
+ }
+ 
+ .footer__email{
+    width: 388px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 2px solid #D64374;
+   background-color:rgba(10, 8, 8, 1) ; 
+
+ }
+ .footer__subs{
+    width: 125px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #D23166;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+     &:hover{
+        flex-shrink: 0;
+        color: #D23166;
+        font-family: Hind Madurai;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 5px;
+        border: 2px solid #D23166;
+        
+        background: #FAFAFA;
+     }
+ }
+ .footer__flex-cards{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+ }
+ .footer__cards{
+    margin-right: 15px;
+     margin-left: 15px;
+     cursor: pointer;
+ }
